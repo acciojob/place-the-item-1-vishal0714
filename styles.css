@@ -1,2 +1,17 @@
 
 /* Your CSS Code here. */
+
+/* Container holding the items */
+.holder {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next row */
+  justify-content: space-between; /* Ensures space between items and first/last items touch the ends */
+	border: 2px solid black ;
+}
+
+/* Individual items */
+.item {
+  flex: 1 1 20%; /* Flex-grow, flex-shrink, and flex-basis */
+  margin: 10px; /* Adds space between items */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
